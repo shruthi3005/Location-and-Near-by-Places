@@ -53,7 +53,7 @@ class NearbyController < ApplicationController
   end
 
   def get_ip
-     ip = '106.200.245.137'
+     ip = request.remote_ip
      location =  Geokit::Geocoders::MultiGeocoder.geocode(ip.to_s)
      return location 
   end
