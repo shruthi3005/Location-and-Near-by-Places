@@ -24,7 +24,7 @@ gem 'json', '>= 1.8.2'
 gem 'jquery-rails'
 group :production do
   gem 'rails_12factor'
-  gem 'sqlite3'
+  gem 'pg'
 end
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2.2'
